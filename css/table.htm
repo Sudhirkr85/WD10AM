@@ -6,40 +6,80 @@
     <title>Document</title>
 
     <style>
-      table,th,
+      table,
+      th,
       td {
         border: 2px solid chartreuse;
         /* border-collapse: collapse; */
         border-spacing: 10px 5px;
+        caption-side: bottom;
+        empty-cells: hide;
+        table-layout: fixed;
+        width: 100%;
+      }
+      td {
+        height: 50px;
+        text-align: center;
+        vertical-align: top;
+      }
+      td:hover {
+        background-color: aquamarine;
+      }
+      tr:nth-child(2n + 3) {
+        font-size: 30px;
+      }
+      .table-box{
+        width: 200px;
+        overflow: auto;
       }
     </style>
   </head>
   <body>
-    <table>
-      <thead>
-        <tr>
-          <th>Roll Number</th>
-          <th>Name</th>
-          <th>Email</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>Sudhir</td>
-          <td>sudhir@gmail.com</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Supriya</td>
-          <td>supriya@gmail.com</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>isha</td>
-          <td>isha@gmail.com</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="table-box">
+      <table>
+        <caption>
+          Student Details
+        </caption>
+        <thead>
+          <tr>
+            <th>Roll Number</th>
+            <th>Name</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Sudhir</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Supriya</td>
+            <td>supriya@gmail.com</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>isha</td>
+            <td>isha@gmail.com</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>isha</td>
+            <td>isha@gmail.com</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>isha</td>
+            <td>isha@gmail.com</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>isha</td>
+            <td>isha@gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>
