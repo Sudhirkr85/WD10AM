@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        height: 50px;
+        background-color: aquamarine;
+        display: flex;justify-content: space-between;
+        padding:0 30px;
+        align-items: center;
+      }
+
+     nav{
+        display: flex;
+        gap: 15px;
+     }
+     li{
+        list-style: none;
+        padding-top: 10px;
+       
+     }
+     .home{
+         display: flex;
+         align-items: center;
+        flex-direction: column;
+     }
+     a{
+        text-decoration: none;
+        color: #000;
+     }
+     li:hover{
+        text-decoration: underline;
+      
+     }
+     .search-box{
+         position: relative;
+     }
+     .fa-magnifying-glass{
+        position: absolute;
+        left: 5px;
+        top: 7px;
+        font-size: 0.7em;
+        color: rgb(96, 96, 88);
+     }
+     input{
+        height: 25px;
+        border-radius: 5px;
+        padding-left: 20px;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Logo</h2>
+
+      <nav>
+        <li class="home">
+            <i class="fa-solid fa-house-user"></i>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Service</a>
+        </li>
+        <li>
+            <i class="fa-solid fa-address-book"></i>
+          <a href="#">Contact us</a>
+        </li>
+        <li>
+          <a href="#">About </a>
+        </li>
+      </nav>
+
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" placeholder="Search here..." />
+      </div>
+    </header>
+  </body>
+</html>
