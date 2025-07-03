@@ -56,10 +56,21 @@ header nav > li > ul > li ul {
   width: 200px;
   display: none;
 }
+.search-box {
+  width: 200px;
+  height: 30px;
+}
+.search-box input {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+}
 
-
-@media screen and (max-width:768px){
-  header nav{
-    display: none;
-  }
+.search-box input:focus {
+  outline: none;
+}
+header .fa-bars{
+  display: none;
 }

@@ -1,0 +1,17 @@
+@media screen and (max-width: 768px) {
+  header nav {
+    position: absolute;
+    flex-direction: column;
+    top: 50px;
+    background-color: aqua;
+    height: 100vh;
+    width: 25%;
+    right: 0;
+    align-items: center;
+    /* display: none; */
+  }
+  header .fa-bars {
+    display: block;
+  }
+ 
+}

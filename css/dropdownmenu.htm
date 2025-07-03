@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -15,13 +24,12 @@
           Service
           <ul>
             <li>Java Full Stack</li>
-            <li>Python Full Stack
-                <ul>
-                    <li>Core Python</li>
-                    <li>Advance Python</li>
-                </ul>
-                
-
+            <li>
+              Python Full Stack
+              <ul>
+                <li>Core Python</li>
+                <li>Advance Python</li>
+              </ul>
             </li>
             <li>Mern Full Stack</li>
             <li>SAP</li>
@@ -34,6 +42,19 @@
       <div class="search-box">
         <input type="search" placeholder="Search here..." />
       </div>
+      <i class="fa-solid fa-bars"></i>
     </header>
+    <script>
+      const menu = document.querySelector(".fa-bars");
+
+      menu.addEventListener("click", () => {
+        const nav = document.querySelector("nav");
+        if (nav.style.display == "none") {
+          nav.style.display = "";
+        } else {
+          nav.style.display = "none";
+        }
+      });
+    </script>
   </body>
 </html>
