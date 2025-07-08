@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 100px;
+        width: 100px;
+        border: 2px solid;
+        /* animation-name: ani; */
+        /* animation-duration: 2s; */
+        /* animation-iteration-count: 1; */
+        /* animation-timing-function: linear; */
+        /* animation-direction: alternate; */
+        /* animation-play-state: paused; */
+        /* animation-fill-mode: backwards; */
+        /* animation-delay: 2s; */
+        animation: ani 2s infinite;
+      }
+
+      @keyframes ani {
+        from {
+          /* height: 100px; */
+          /* background-color: blueviolet; */
+        }
+        to {
+          /* height: 200px; */
+          /* background-color: aqua; */
+          transform: rotate(360deg);
+        }
+        0% {
+          background-color: blueviolet;
+        }
+        50% {
+          background-color: chartreuse;
+        }
+        100% {
+          background-color: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
