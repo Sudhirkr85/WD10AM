@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        /* filter: blur(5px); */
+        /* filter: brightness(100%); */
+        /* filter: contrast(10%); */
+        /* filter: saturate(0%); */
+      }
+      img:hover {
+        filter: blur(0px);
+      }
+
+      div {
+        border-image: url(../image/2.jpg);
+        border-image-width: 30px;
+        border-image-slice: 10;
+        border-image-outset: 10px;
+        height: 100px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <img src="../image/2.jpg" alt="" /> -->
+    <div></div>
+  </body>
+</html>

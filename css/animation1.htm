@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .bounce {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: white;
+        border-radius: 5px;
+        animation: bounce 1s infinite;
+      }
+      @keyframes bounce {
+        0% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-20px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bounce">Bounce Me!</div>
+  </body>
+</html>

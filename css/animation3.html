@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      div {
+        background-color: #000;
+        height: 200px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        /* border-radius: 50%; */
+      }
+      div::before {
+        content: "";
+        width: 200px;
+        height: 200px;
+        background-image: linear-gradient(red, green, blue, white,#099dca);
+        position: absolute;
+        animation: rotate 2s infinite ease-in-out;
+      }
+      div::after {
+        content: "";
+        width: 190px;
+        height: 190px;
+        background-color: #000;
+        position: absolute;
+        /* border-radius: 50%; */
+        
+      }
+
+      @keyframes rotate {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      div h1 {
+        color: #fff;
+        z-index: 100;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sudhir</h1>
+    </div>
+  </body>
+</html>
