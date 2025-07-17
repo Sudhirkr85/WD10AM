@@ -49,18 +49,49 @@
 
 // console.log(13<<3);
 
-
 // console.log("" && null && 15 && 0 && 5);
-
 
 // console.log("Hello" || "World" || 0 || false || null || undefined|| "");
 
 // console.log( false || 0 || "" || null || undefined || "Hello" || "World" || 5);
 
-
 // console.log(!0);
-
 
 // console.log(!"Hello" && !0 && !null && !undefined && !5 && !"World" && !false);
 
- console.log(!!"Hello");
+//  console.log(!!"Hello");
+
+// let a = 10? 10 : 50
+
+// console.log(a);
+
+// let b= 10;
+
+// let a = b++ <= ++b ? b-- == b ? b++ + ++b : --b -b : b++ +b;
+
+// console.log(a)
+// console.log(b)
+
+// let a = 5;
+// let b = 10;
+
+// let c = a++ > --b ? a-- - b < a++ ? b++ + a : --b + a++: ++a + b-- - --b;
+
+// console.log(c);
+// console.log(a);
+// console.log(b);
+
+// let firstName = "John";
+// let lastName = "Doe";
+
+// let fullName = firstName + lastName;
+
+// console.log(fullName);
+
+// let a= "10";
+
+// console.log(typeof a);
+
+// let a = null ?? false ?? 10 ?? "Hello" ?? false;
+
+// console.log(a);
