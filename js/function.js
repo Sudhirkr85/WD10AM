@@ -137,13 +137,53 @@
 //   let a = 45;
 //   var b = 40;
 //   console.log(b);
-    // console.log(a);
+// console.log(a);
 // }
 // console.log(b);
 // console.log(a);
 
+// let fn = function sum(a, b) {
+//   console.log(a + b);
+// };
+
+// let fn=sum;
+
+//Function Expreasion
+// let sum=function (a, b) {
+//   console.log(a + b);
+// }
+
+//Arrow Function
+// let sum = (a, b) => {
+//   console.log(a + b);
+// };
+// sum(10, 50);
+
+// const fn = () => {
+//   console.log("Welcome");
+// };
+
+// fn();
+
+// let sum = (a, b) => a + b;
+
+// console.log(sum(10, 20));
+
+// function operation(fn) {
+//   let s = fn(10, 50);
+//   console.log(s);
+// }
+// operation(sum);
 
 
+// function outer() {
+  
+//     function inner(){
+//         console.log("inner function")
+//     }
+//   return inner;
+// }
 
+// outer()()
 
 
