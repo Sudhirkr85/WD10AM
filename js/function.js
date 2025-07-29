@@ -175,9 +175,8 @@
 // }
 // operation(sum);
 
-
 // function outer() {
-  
+
 //     function inner(){
 //         console.log("inner function")
 //     }
@@ -185,5 +184,16 @@
 // }
 
 // outer()()
+
+// function func(fn) {
+//   fn();
+// }
+
+// func(() => {
+//   console.log("hii");
+// });
+
+
+
 
 
