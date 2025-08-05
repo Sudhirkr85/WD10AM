@@ -1,0 +1,19 @@
+.container,.listItem{
+
+    margin:20px 0  30px 50px;
+}
+.container *{
+ margin-right: 30px;
+}
+.listItem li span{
+    margin-right: 50px;
+}
+.listItem li{
+    margin-bottom: 20px;
+}
+button{
+    padding: 5px 20px;
+    background-color: blue;
+    color: azure;
+    font-weight: 800;
+}
