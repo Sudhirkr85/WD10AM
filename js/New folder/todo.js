@@ -1,14 +1,15 @@
 function addItem() {
-  const inputItemValue = document.getElementById("inputItem").value;
-  const inputDateValue = document.getElementById("inputDate").value;
+  let inputValue = document.getElementById("inputItem").value;
+  let inputDate = document.getElementById("inputDate").value;
 
-  const listItem = document.querySelector(".listItem");
+  let ul = document.querySelector(".listItem");
 
-  listItem.innerHTML += `<li> <span>${inputItemValue}</span> <span> ${inputDateValue}</span> <button onclick="deleteItem()">Delete</button>  </li>`;
+  ul.innerHTML += `<li><span>${inputValue}</span><span>${inputDate}</span> <button onclick="deleteItem(this)">Delete</button></li>`;
 }
 
-const deleteItem = () => {
+function deleteItem(abc) {
+  let li = abc.parentNode;
+  let ul = document.querySelector(".listItem");
 
-
-};
-
+  ul.removeChild(li);
+}
