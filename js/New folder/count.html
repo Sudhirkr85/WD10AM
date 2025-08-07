@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1><span id="second"></span></h1>
+    <button onclick="fn()">Click</button>
+    <script>
+      //   this.alert("Sudhir");
+
+    setInterval(()=>{
+         document.getElementById("second").innerText = new Date().getSeconds();
+
+    },1000)
+      function fn() {
+        // open('https://www.instagram.com/accounts/login/?hl=en')
+        //   close()
+        //  let s= window.confirm("Are  you sure?")
+        // let s=prompt("Enter Your age.")
+        //  console.log(s);
+      }
+    </script>
+  </body>
+</html>
