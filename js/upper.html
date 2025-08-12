@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      onkeyup="document.querySelector('input').value = document
+          .querySelector('input')
+          .value.toUpperCase()"
+    />
+
+    <input
+      type="text"
+      onkeyup="this.value =this.value.toUpperCase()"
+    />
+
+    <input type="text" style="text-transform: uppercase;">
+    <script>
+      function upperCase() {
+        // const input = document.querySelector("input");
+        // input.value = input.value.toUpperCase();
+
+        document.querySelector("input").value = document
+          .querySelector("input")
+          .value.toUpperCase();
+      }
+    </script>
+  </body>
+</html>

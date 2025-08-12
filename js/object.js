@@ -54,12 +54,26 @@
 
 // console.log(z);
 
-let ob = {
-  name: "Sudhir",
-  showName: function () {
-   
-    console.log(this.name);
-  },
-};
+// let ob = {
+//   name: "Sudhir",
+//   showName: function () {
 
-ob.showName()
+//     console.log(this.name);
+//   },
+// };
+
+// ob.showName()
+
+// let fn = (a) => {
+//   console.log(a[3].marks);
+// };
+
+// fn([
+//   10,
+//   20,
+//   "Sudhir",
+//   {
+//     city: "Gurgaon",
+//     marks: [90, 80, 40, 60],
+//   },
+// ]);
