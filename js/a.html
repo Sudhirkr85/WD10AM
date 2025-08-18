@@ -4,22 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      img {
+        width: 100px;
+      }
+    </style>
   </head>
   <body>
     <div id="i"></div>
 
     <script>
+      // console.log("1");
+      // console.log("2");
+      // console.log("3");
+
+      //  setTimeout(()=>{
+      //    console.log("9");
+      //  },1000)
+
+      // console.log("4");
+      // console.log("5");
+
+      // let b = true;
+
+      // setTimeout(() => {
+      //   b = false;
+      // }, 1000);
+
+      // while (b) {
+      //   console.log("Sudhir");
+      // }
+
       let div = document.getElementById("i");
 
-      fetch("https://dummyjson.com/recipes")
-        .then((response) => response.json())
-        .then((data) => {
+      // function loadData() {
+      // fetch("https://dummyjson.com/recipes")
+      //   .then((response) => response.json())
+      //   .then((data) => {
+      //     let images = "";
+      //     data.recipes.forEach((recipe) => {
+      //       images += `<img src="${recipe.image}" />`;
+      //     });
+      //     div.innerHTML = images;
+      //   })
+      //   .catch((e) => console.log(r));
+      // }
+
+      async function loadData() {
+        try {
+          let response = await fetch("https://dummyjson.com/recipes");
+          let data = await response.json();
+
           let images = "";
-          data.recipes.forEach((recipe) => {
-            images += `<img src="${recipe.image}" />`;
-          });
+          // data.recipes.forEach((recipe) => {
+          //   images += `<img src="${recipe.image}" />`;
+          // });
+
+          for (let i = 0; i < data.recipes.length; i++) {
+            images += `<img src="${data.recipes[i].image}" />`;
+          }
           div.innerHTML = images;
-        });
+        } catch (e) {
+          console.log(e);
+        }
+      }
+
+      loadData();
     </script>
   </body>
 </html>
