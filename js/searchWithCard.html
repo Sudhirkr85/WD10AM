@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .products {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .products .product {
+        overflow: hidden;
+        width: 200px;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+        padding: 10px;
+      }
+
+      .search-box {
+        margin: 20px 0;
+        text-align: center;
+      }
+      .search-box input,
+      button {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="search-box">
+      <input type="text" placeholder="Search here..." oninput="searchItem()" />
+      <button onclick="searchItem()">Search</button>
+    </div>
+    <section class="products">
+      <div class="product">
+        <img src="image/2.jpg" width="200px" />
+        <h1>Item1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="product">
+        <img src="image/3.jpg" width="200px" />
+        <h1>Item2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="product">
+        <img src="image/4.jpg" width="200px" />
+        <h1>Item3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="product">
+        <img src="image/5.jpg" width="200px" />
+        <h1>Item4</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="product">
+        <img src="image/6.jpg" width="200px" />
+        <h1>Item5</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="product">
+        <img src="image/2.jpg" width="200px" />
+        <h1>Item6</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </section>
+
+    <script>
+      function searchItem() {
+        const searchItem = document.querySelector("input").value.toLowerCase();
+
+        const items = document.querySelectorAll(".product");
+
+        items.forEach((item) => {
+          const h1 = item.querySelector("h1");
+
+          if (h1.textContent.toLowerCase().includes(searchItem)) {
+            item.style.display = "";
+          } else {
+            item.style.display = "None";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

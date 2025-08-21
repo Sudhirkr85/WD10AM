@@ -28,19 +28,33 @@
 //  console.log(s.#roll);
 //  s.show();
 
-class Student {
- 
-  constructor(roll, name) {
-    this.roll = roll;
-    this.name = name;
-  }
-  
-  show = () => {
-    console.log(this.name);
-    console.log(this.roll);
-  };
-}
+// class Student {
+
+//   constructor(roll, name) {
+//     this.roll = roll;
+//     this.name = name;
+//   }
+
+//   show = () => {
+//     console.log(this.name);
+//     console.log(this.roll);
+//   };
+// }
 
 // let s = new Student(1,"Sudhir");
+// let s = new Student();
+// s.show()
+
+class College {
+  collegeName = "Aptron";
+}
+class A{
+
+}
+class Student extends College {
+  name = "Sudhir";
+}
+
 let s = new Student();
-s.show()
+console.log(s.name);
+console.log(s.collegeName);

@@ -1,7 +1,9 @@
 let str1 = "JavaScript often abbreviated as JS , is a programming language and core technology of the World Wide Web , alongside HTML and CSS.";
 
 
-console.log(str1.split(","));
+console.log(str1.includes('Java'));
+
+
 
 
 

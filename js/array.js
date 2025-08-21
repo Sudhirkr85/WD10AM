@@ -164,3 +164,9 @@ let ar = [1, 15, 3, 6, 0, 6];
 // console.log(ar.find((i)=> i>5));
 // console.log(ar.some((i)=> i>50));
 // console.log(ar.every((i)=> i>=0));
+
+
+
+
+
+

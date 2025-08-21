@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .notification {
+        background-color: rgba(68, 68, 65, 0.1);
+        position: absolute;
+        right: 10px;
+        opacity: 1;
+        top: 30px;
+      }
+      .notification p {
+        margin: 10px;
+        color: red;
+      }
+      .notification.show {
+        opacity: 1;
+      }
+      .notification .a {
+        height: 2px;
+        width: 100%;
+
+      }
+      .a.process{
+        background-image: linear-gradient(to right, red, #fff, green);
+        animation: processBar 3s linear ;
+      }
+      @keyframes processBar {
+        from {
+          width: 100%;
+        }
+        to {
+          width: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="notification">
+      <p>OTP sent Successfuly</p>
+      <div class="a process"></div>
+    </div>
+    <button onclick="send()">Send OTP</button>
+    <script>
+      function send() {
+        const notificationDiv = document.querySelector(".notification");
+
+        notificationDiv.classList.add("show");
+
+        const prossesBar=document.querySelector('.a')
+
+        
+
+        setTimeout(() => {
+          notificationDiv.classList.remove("show");
+         
+        }, 3000);
+      }
+    </script>
+  </body>
+</html>
