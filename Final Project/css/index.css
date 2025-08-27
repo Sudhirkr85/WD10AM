@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 header {
-  background-color: aquamarine;
+  background-color: rgba(163, 164, 164,.1);
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -41,26 +41,50 @@ header .search-box input{
 header .bag{
         display: flex;
         align-items: center;
+        position: relative;
 }
 header .bag i{
     font-size:1.5em;
-    color: #f00;
+    color: #f30606;
 }
-
+header .bag .bag-count{
+  position: absolute;
+  top:0;
+  right: 0;
+  font-weight: 700;
+}
 
 main .products{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
+    padding: 30px 50px;
+    justify-content: center;
 }
 main .products .product{
     max-width: 250px;
+    box-shadow: 0 0 10px 0  rgba(0,0,0,.5);
 }
 main .products .product .product-details{
     padding: 0 20px;
 
 }
+main .products .product .product-price .d-price{
+  text-decoration: line-through;
+  color: #6f6c6c;
+}
 
+main .products .product *{
+  margin: 10px 0;
+}
+main .products .product .add-to-bag{
+  width: 100%;
+  padding: 3px;
+  
+  background-color: #f00;
+  color: white;
+  font-weight: 700;
+}
 
 
 
