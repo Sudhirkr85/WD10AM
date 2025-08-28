@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 header {
-  background-color: rgba(163, 164, 164,.1);
+  background-color: rgba(163, 164, 164, 0.1);
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -18,77 +18,72 @@ header .logo img {
   object-fit: cover;
   width: 40px;
 }
-header nav{
-    display: flex;
-    gap: 20px;
-    align-items: center;
+header nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
-header nav li{
-    list-style: none;
+header nav li {
+  list-style: none;
 }
-header .search-box{
-    flex-grow: 2;
-    max-width: 300px;
-    height: 40px;
-    margin: 12px;
+header .search-box {
+  flex-grow: 2;
+  max-width: 300px;
+  height: 40px;
+  margin: 12px;
 }
-header .search-box input{
-    width: 100%;
-    height: 100%;
-    font-size: large;
-    padding-left: 10px;
+header .search-box input {
+  width: 100%;
+  height: 100%;
+  font-size: large;
+  padding-left: 10px;
 }
-header .bag{
-        display: flex;
-        align-items: center;
-        position: relative;
+header .bag {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
-header .bag i{
-    font-size:1.5em;
-    color: #f30606;
+header .bag i {
+  font-size: 1.5em;
+  color: #f30606;
 }
-header .bag .bag-count{
+header .bag .bag-count {
   position: absolute;
-  top:0;
+  top: 0;
   right: 0;
   font-weight: 700;
 }
 
-main .products{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    padding: 30px 50px;
-    justify-content: center;
+main .products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 30px 50px;
+  justify-content: center;
 }
-main .products .product{
-    max-width: 250px;
-    box-shadow: 0 0 10px 0  rgba(0,0,0,.5);
+main .products .product {
+  max-width: 250px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
-main .products .product .product-details{
-    padding: 0 20px;
-
+main .products .product .product-details {
+  padding: 0 20px;
 }
-main .products .product h4{
+main .products .product h4 {
+  white-space: nowrap;
   overflow: hidden;
-
- height: 18px;
-
-
+  text-overflow: ellipsis;
 }
-main .products .product *{
+main .products .product * {
   margin: 10px 0;
 }
-main .products .product .add-to-bag{
+main .products .product .add-to-bag {
   width: 100%;
   padding: 3px;
-  
+
   background-color: #f00;
   color: white;
   font-weight: 700;
 }
-
-
 
 footer {
   background-color: #222;
