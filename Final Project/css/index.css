@@ -69,11 +69,13 @@ main .products .product .product-details{
     padding: 0 20px;
 
 }
-main .products .product .product-price .d-price{
-  text-decoration: line-through;
-  color: #6f6c6c;
-}
+main .products .product h4{
+  overflow: hidden;
 
+ height: 18px;
+
+
+}
 main .products .product *{
   margin: 10px 0;
 }
