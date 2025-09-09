@@ -6,11 +6,11 @@ async function getData() {
 
   function onLoad(data) {
     let products = document.querySelector(".products");
- 
-    
-    
-    let cart = JSON.parse(localStorage.getItem('cart'))
-     document.querySelector(".bag-count").textContent = cart.length;
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    if (cart.length !== 0)
+      document.querySelector(".bag-count").textContent = cart.length;
     let items = ``;
     data.forEach((item) => {
       items += `
@@ -37,12 +37,12 @@ async function getData() {
 
     buttons.forEach((button) => {
       button.addEventListener("click", () => {
-        let id = button.getAttribute("data-id");
+        let id = Number(button.getAttribute("data-id"));
 
         if (!cart.includes(id)) {
           cart.push(id);
           document.querySelector(".bag-count").textContent = cart.length;
-          localStorage.setItem("cart",JSON.stringify(cart));
+          localStorage.setItem("cart", JSON.stringify(cart));
         }
       });
     });

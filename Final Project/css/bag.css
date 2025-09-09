@@ -1,0 +1,47 @@
+.bag-details {
+  display: flex;
+  gap: 20px;
+  padding: 50px;
+}
+.products {
+  width: 60%;
+  
+}
+.products-total-amount {
+  width: 35%;
+ border: 1px solid rgba(0,0,0,.1);
+ padding: 10px
+ 
+}
+.products-total-amount *{
+  margin-bottom: 10px;
+}
+.products-total-amount *:not(h6,button){
+  display: flex;
+  justify-content: space-between;
+}
+.products-total-amount button{
+  width: 100%;
+  padding: 10px;
+}
+.products .product {
+  display: flex;
+  border: 2px solid rgba(0,0,0,.1);
+  margin-bottom: 2px;
+  position: relative;
+}
+
+.products .product img {
+  height: 150px;
+}
+.products .product .item-details {
+  padding: 10px;
+}
+
+.products .product .item-details *{
+    margin-bottom: 20px;
+}
+.products .product .fa-xmark{
+    position: absolute;
+    right: 10px;
+}
