@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mini React Mount & Render Demo</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      // Simple function component: returns a DOM node
+      function Hello(props) {
+        const div = document.createElement("div");
+        div.textContent = `Hello, ${props.name}!`;
+        return div;
+      }
+
+      // Render function: calls component, mounts DOM node in container
+      function render(component, props, container) {
+        const dom = component(props);
+        container.appendChild(dom);
+        return dom;
+      }
+      // Re-render: removes old DOM node and renders new one
+      function rerender(component, props, container, oldDom) {
+        if (oldDom) {
+          container.removeChild(oldDom);
+        }
+        return render(component, props, container);
+      }
+
+      // Usage example
+      const app = document.getElementById("root");
+
+      // Initial mount
+      let mountedNode = render(Hello, { name: "Sudhir" }, app);
+
+      // Update after 2 seconds (simulate re-render)
+      setTimeout(() => {
+        mountedNode = rerender(Hello, { name: "Satyam" }, app, mountedNode);
+      }, 2000);
+
+      // Update again after 4 seconds
+      setTimeout(() => {
+        mountedNode = rerender(Hello, { name: "Satya" }, app, mountedNode);
+      }, 4000);
+    </script>
+  </body>
+</html>
