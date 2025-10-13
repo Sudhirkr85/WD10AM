@@ -1,10 +1,11 @@
 function Show({ items }) {
-  if (items.length === 0) return <p>Loading...</p>;
-
   return (
     <div>
       {items.map((item) => (
-        <h2 key={item.id}>{item.title}</h2>
+        <div key={item.id} style={{ width: "18rem", border: "2px solid" }}>
+          <h2>{item.title}</h2>
+          <p>{item.body}</p>
+        </div>
       ))}
     </div>
   );

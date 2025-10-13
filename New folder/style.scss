@@ -1,0 +1,35 @@
+$dark: #2c3e50;
+$light: #ecf0f1;
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.dark {
+  @if 10>1 {
+    background-color: $dark;
+    color: $light;
+  }
+  @else {
+    background-color: $light;
+    color: $dark;
+  }
+}
+
+$i: 1;
+
+@while $i<=5 {
+  .item-#{$i} {
+    width: 20% * $i;
+
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: $light;
+  }
+  $i: $i + 1;
+}
+
+
